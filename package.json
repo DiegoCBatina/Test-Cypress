@@ -1,0 +1,42 @@
+{
+  "name": "ilab-test-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome",
+    "cy:run": "node scripts/cypress.js",
+    "test:report": "npx cypress run --config video=false --env allure=true --browser chrome",
+    "test:html": "node ./support/report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-util-is": "^1.0.2",
+    "cypress-upload-file-post-form": "^1.1.0",
+    "leite": "^0.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "allure-commandline": "^2.13.0",
+    "cucumber-html-reporter": "^5.2.0",
+    "cypress": "^4.12.1",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/step-definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/report",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

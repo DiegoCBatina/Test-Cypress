@@ -1,0 +1,22 @@
+{
+    "testFiles": "**/*.feature",
+    "baseUrl": "http://google.com.br/",
+    "viewportWidth": 1440,
+    "viewportHeight": 900,
+    "defaultCommandTimeout": 10000,
+    "pageLoadTimeout": 90000,
+    "chromeWebSecurity": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "overwrite": true,
+      "html": true,
+      "json": false
+    },
+    "screenshotsFolder": "cypress/snapshots/actual",
+    "blacklistHosts": ["www.googletagmanager.com"],
+    "whitelistHosts": ["*.cypress.io"],
+    "modifyObstructiveCode": false,
+    "env": {
+      "allureResultsPath": "allure/results"
+    }
+  }

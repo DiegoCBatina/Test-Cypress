@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "iLab | Pesquisar iLab Quality no Google",
+    "line": 2,
+    "id": "ilab-|-pesquisar-ilab-quality-no-google",
+    "tags": [],
+    "uri": "iLabPesquisa.feature",
+    "elements": [
+      {
+        "id": "ilab-|-pesquisar-ilab-quality-no-google;ilab-|-pesquisar-ilab-quality-no-google",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "iLab | Pesquisar iLab Quality no Google",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "que acesso o Google",
+            "result": {
+              "status": "passed",
+              "duration": 1355000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 6,
+            "name": "digito iLAB Quality no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 7,
+            "name": "clico no botão Pesquisa Google",
+            "result": {
+              "status": "passed",
+              "duration": 1406000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 8,
+            "name": "vejo os resultados de pesquisa do Google com o site www.ilabquality.com",
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
